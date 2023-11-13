@@ -103,7 +103,7 @@ boolean		devparm;	// started game with -devparm
 boolean         nomonsters;	// checkparm of -nomonsters
 boolean         respawnparm;	// checkparm of -respawn
 boolean         fastparm;	// checkparm of -fast
-
+boolean         pistolstart;
 
 
 skill_t		startskill;
@@ -1387,6 +1387,8 @@ void D_DoomMain (void)
     //
 
     fastparm = M_CheckParm ("-fast");
+
+    pistolstart = M_CheckParm("-pistolstart");
 
     //!
     // @vanilla
